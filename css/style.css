@@ -1,0 +1,178 @@
+body
+{
+    font-size: 25px;
+    font-family: Cascadia Code Light;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
+}
+.text {
+    animation: blinker 1.5s linear infinite;
+    color: red;
+    font-family: Castellar;
+    position: absolute;
+    text-transform: uppercase;
+}
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+label
+{
+    color: blue;
+}
+#winner{
+    font-size: 140px;
+    display: none;
+    margin-top: 10%;
+    
+}
+#user1,#user2
+{
+    height: 35px;
+    
+}
+.head{
+    text-align: center;
+}
+.img
+{
+        margin-left: 45%;
+}
+.h1
+{
+    text-align: center;
+    
+}
+.btn
+{
+    border-radius: 10px;
+    background-color: #FAD961;
+    background-image: linear-gradient(90deg, #FAD961 0%, #F76B1C 100%);
+    font-size: 24px;
+    height: 50px;
+    width: 84px;
+}
+.btn:hover
+{
+    background-color: #52ACFF;
+    background-image: linear-gradient(180deg, #52ACFF 25%, #FFE32C 100%);    
+}
+.button
+{
+    border-radius: 10px;
+    background-color: #FAD961;
+    background-image: linear-gradient(90deg, #FAD961 0%, #F76B1C 100%);
+    font-size: 30px;
+    height: 50px;
+    width: 100px;
+}
+.button:hover
+{
+    background-color: #52ACFF;
+    background-image: linear-gradient(180deg, #52ACFF 25%, #FFE32C 100%);    
+}
+.container
+{
+    border-top: none;
+    line-height: 200px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top:25%;
+    left: 28%;
+    max-width: 600px;
+    display: none;
+}
+.winner-show
+{
+    border: solid 1px;
+    height: 80px;
+    width: 150px;
+}
+.boxes
+{
+    line-height: 1.7;
+    vertical-align: middle;
+    font-size: 75px;
+    text-align: center;
+    vertical-align: middle;
+    float: left;
+    display: inline-block;
+    border: solid 1px;
+    height: 180px;
+    width: 180px;
+}
+.first-page
+{
+    
+    text-align: center;
+    justify-content: center;
+    margin-top: 8%;
+    
+}
+input
+{
+    
+    border: none;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+input:focus
+{
+    outline: none;
+}
+th
+{   
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+    border-collapse: collapse;
+    border: solid 1px;
+    float: left;
+    width: 80px;
+}
+.table
+{
+    float: left;
+    position: absolute;
+    bottom: 35%;
+    left: 5%;
+    margin-left: auto; 
+    margin-right: auto;
+    display: none;
+    margin-right: 15%;
+}
+.command
+{
+    display: none;
+    position: absolute;
+    bottom: 34%;
+    right: 3%;
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+        left: 6%;
+        max-width: 400px;
+    }
+    .boxes{
+        height: 120px;
+        width: 120px;
+    }
+    .img
+    {
+    margin-left: 25%;
+    }
+    .button
+    {
+    width: 100%;
+    }
+    #Winner{
+        font-size: 65px;
+    }
+    
+    
+    
+    
+}

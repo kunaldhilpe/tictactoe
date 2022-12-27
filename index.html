@@ -1,0 +1,53 @@
+<html lang="en">    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+        <h1 class="head">TIC TAC TOE</h1>
+        <marquee direction="right"scrollamount="25" class="text"><span id="winner"></span></marquee>
+    <img class="img" src="image/tictac.png" width="200" height="200">
+        <div class="first-page">
+            <label>PLAYER 1</label>
+            <input type="textbox" id="user1" placeholder="enter name"><br>
+            <label>PLAYER 2</label> 
+            <input type="textbox" id="user2" placeholder="enter name"><br>
+            <input type="button" class="button" value="start" id="start">
+        </div>
+    <div class="game">
+
+        <table class="table">
+            <tr>
+                <th id="player1"></th>
+                <th id="player2"></th>
+            </tr>
+            <tr>
+                <th id="score1">0</th>
+                <th id="score2">0</th>
+            </tr>
+        </table>
+          
+        <div class="container">
+            <div class="boxes" id="0"></div>
+            <div class="boxes" id="1"></div>
+            <div class="boxes" id="2"></div>
+            <div class="boxes" id="3"></div>
+            <div class="boxes" id="4"></div>
+            <div class="boxes" id="5"></div>
+            <div class="boxes" id="6"></div>
+            <div class="boxes" id="7"></div>
+            <div class="boxes" id="8"></div>
+        </div>    
+        <div class="command">
+            <input type="button" class="btn" id="reset" value="reset">
+            <input type="button" class="btn" id="restart" value="restart">
+        </div>
+    </div>   
+    
+    <script src="js/index.js"></script>  
+</body>
+</html>
