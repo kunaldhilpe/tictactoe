@@ -44,8 +44,21 @@ function winner()
         getscore()
     }
 }
+document.querySelector("#btn").addEventListener('click',function()
+{
+    document.querySelector(".rules").style.display ="none";
+    document.querySelector(".container").style.display ="block";
+    document.querySelector(".first-page ").style.display ="none";
+    document.querySelector(".table").style.display ="block";
+    document.querySelector('.command').style.display="block";
+    document.querySelector('.img').style.display="none";
+    document.querySelector('#winner').style.display="block";
+});
 
-
+document.querySelector('#term').addEventListener('click',function(){
+    document.querySelector('.terms').style.display="none";
+    document.querySelector(".rules").style.display ="block";  
+})    
 
 document.querySelector('#start').addEventListener('click',function()
 {
@@ -60,14 +73,16 @@ document.querySelector('#start').addEventListener('click',function()
     }
     else
     {
-        document.querySelector(".container").style.display ="block";
+        document.querySelector('.terms').style.display ="block";
+        document.querySelector(".rules").style.display ="none";
+        document.querySelector(".container").style.display ="none";
         document.querySelector(".first-page ").style.display ="none";
         document.querySelector("#player1").innerHTML="<strong>"+player1+"</strong>";
         document.querySelector("#player2").innerHTML="<strong>"+player2+"</strong>";
-        document.querySelector(".table").style.display ="block";
-        document.querySelector('.command').style.display="block";
+        document.querySelector(".table").style.display ="none";
+        document.querySelector('.command').style.display="none";
         document.querySelector('.img').style.display="none";
-        document.querySelector('#winner').style.display="block";
+        document.querySelector('#winner').style.display="none";
         
     }
     
